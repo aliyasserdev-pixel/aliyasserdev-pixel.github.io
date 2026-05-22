@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Ali Yasser Portfolio Website" />
+  <title>Ali Yasser</title>
+
+  <!-- ✅ حل CSP النهائي -->
+  <meta http-equiv="Content-Security-Policy" content="img-src 'self' data: https:;">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./styles/style.css" />
+
+  <!-- ✅ حل أيقونة favicon -->
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E👨‍💻%3C/text%3E%3C/svg%3E">
+</head>
+
+<body>
+  <div class="container">
+    <video class="video-loop" autoplay loop muted>
+      <source src="./video-loop.mp4" type="video/mp4" />
+    </video>
+
+    <header class="header">
+      <label for="menu" class="burger-menu">
+        <div class="burger-menu__bar"></div>
+        <div class="burger-menu__bar"></div>
+        <div class="burger-menu__bar"></div>
+      </label>
+
+      <input id="menu" class="burger-menu__checkbox" type="checkbox" />
+
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li>
+            <a class="navigation__link navigation__bio" href="#bio">Bio</a>
+          </li>
+          <li>
+            <a class="navigation__link navigation__skills" href="#skills">Skills</a>
+          </li>
+          <li>
+            <a class="navigation__link navigation__media" href="#media">Media</a>
+          </li>
+          <li>
+            <a class="navigation__link navigation__projects" href="#projects">Projects</a>
+          </li>
+          <li>
+            <a class="navigation__link navigation__clients" href="#clients">My Clients</a>
+          </li>
+          <li>
+            <a class="navigation__link navigation__contact" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="toggle">
+        <h3 class="toggle__title">Switch Theme</h3>
+        <input id="toggle" class="toggle__checkbox" type="checkbox" />
+        <label class="toggle__label" for="toggle" role="button" tabindex="0"></label>
+      </div>
+    </header>
+
+    <section id="bio" class="section bio">
+      <div class="bio__data">
+        <h1 class="bio__heading">Hi There, I’M A Passionate Software Engineer</h1>
+        <p class="bio__objective">
+          My name is <span class="bio__name">Ali Yasser</span>, a co-founder of
+          <a class="bio__almdrasa" href="#">Almdrasa.com</a>, Software Engineer and a content
+          creator who publish content on
+          <a class="bio__facebook" href="#">Facebook</a>,
+          <a class="bio__twitter" href="#">Twitter</a>,
+          <a class="bio__linkedin" href="#">LinkedIn</a> and
+          <a class="bio__youtube" href="#">Youtube</a>.
+        </p>
+        <a class="bio__links say-hi-link" href="#">Say Hi</a>
+        <a class="bio__links find-out-link" href="#">
+          Download CV <span class="bio__arrow">↓</span>
+        </a>
+      </div>
+      <div class="bio__pic-content">
+        <img class="bio__pic" src="./images/personal-pic.jpg" alt="personal pic of Ali Yasser" />
+      </div>
+    </section>
+
+    <section id="skills" class="section skills section--with-bg">
+      <h2 class="h2-heading">Skills</h2>
+      <div class="skills__filters">
+        <button class="skills__button skills__button--isActive" data-type="all">All</button>
+        <button class="skills__button" data-type="frontend">Frontend</button>
+        <button class="skills__button" data-type="backend">Backend</button>
+      </div>
+
+
+    </section>
+
+    <section id="media" class="section media">
+      <video class="media__video" src="./video.mp4" poster="./images/thumbnail.jpg" controls></video>
+    </section>
+
+    <section id="projects" class="section projects">
+      <h2 class="h2-heading">
+        MY FEATURED <br />
+        PROJECTS
+      </h2>
+      <div class="projects__main">
+        <img class="projects__img responsive-img" src="./images/project-1.jpg" alt="Quran Tab Extension" />
+        <div class="projects__data">
+          <h3 class="h3-heading">
+            Quran Tab <br />
+            Extension
+          </h3>
+          <p class="projects__description">
+            Quran Tab is an Islamic new tab page that will keep you inspired by a verse from the Quran every time you
+            open a new tab that helps you achieve your "Khatma" and keeps you connected with the words of Allah.
+          </p>
+          <a class="projects__link" href="#" target="_blank">Chrome Link</a>
+          <span>-</span>
+          <a class="projects__link" href="#" target="_blank">Edge Link</a>
+        </div>
+
+        <div class="projects__data">
+          <h3 class="h3-heading">
+            Quran Station <br />
+            Extension
+          </h3>
+          <p class="projects__description">
+            Small extension that gives you access to over 100 stations to help you listen to the Quran from your
+            favorite reciters easily Quran-Station has over 100 stations to help you listen to the Quran from your
+            favorite reciters in a quick and easy way.
+          </p>
+          <a class="projects__link" href="#" target="_blank">Chrome Link</a>
+          <span>-</span>
+          <a class="projects__link" href="#" target="_blank">Firefox Link</a>
+          <span>-</span>
+          <a class="projects__link" href="#" target="_blank">Edge Link</a>
+        </div>
+        <img class="projects__img responsive-img" src="./images/project-2.jpg" alt="Quran Tab Extension" />
+      </div>
+    </section>
+
+    <section id="clients" class="section clients section--with-bg">
+      <h2 class="h2-heading">
+        What My <br />
+        Clients Says.
+      </h2>
+
+      <div class="clients__opinions">
+        <div class="clients__wrapper">
+          <p class="clients__opinion">
+            Abusrea has the advantageous ability to understand a problem and implement code to a high standard within
+            the deadline. Each project we have worked on, I know I can completely trust Abusrea to own his tasks and
+            complete what is needed when asked of him.
+          </p>
+          <p class="clients__opinion">
+            Ali will patiently listen to you and give you his own Ideas as well, and in the end, he comes up with
+            something completely different from what you’re expecting, but the good news is, you’ll always love it.
+          </p>
+          <p class="clients__opinion">
+            I had a chance to work closely with Ali as a direct manager from hist first day at DeliveryHero until
+            my last day there (6+months). Ali's biggest strengths that I admire are taking initiatives on personal
+            and team level, and driving them.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div>
+        <p class="contact__description">
+          Feel free to reach out to me any time. I prefer to talk over email, especially since we may be a few time
+          zones away.
+        </p>
+
+        <a href="mailto: example@gmail.com" class="contact__email">example@gmail.com</a>
+
+        <div class="contact__socials">
+          <a class="contact__social" href="#">
+            <img src="./images/brand/facebook.svg" alt="facebook" />
+          </a>
+          <a class="contact__social" href="#">
+            <img src="./images/brand/twitter.svg" alt="twitter" />
+          </a>
+          <a class="contact__social" href="#">
+            <img src="./images/brand/youtube.svg" alt="youtube" />
+          </a>
+          <a class="contact__social" href="#">
+            <img src="./images/brand/github.svg" alt="github" />
+          </a>
+          <a class="contact__social" href="#">
+            <img src="./images/brand/instagram.svg" alt="instagram.svg" />
+          </a>
+          <a class="contact__social" href="#">
+            <img src="./images/brand/LinkedIn.svg" alt="LinkedIn.svg" />
+          </a>
+        </div>
+      </div>
+
+      <div class="contact__formContent">
+        <h2 class="h2-heading">
+          Let’s Work <br />
+          Together!
+        </h2>
+        <form action="results.html">
+          <div class="contact__inputs">
+            <input type="text" class="contact__input" name="name" placeholder="Full Name" required />
+            <input type="tel" class="contact__input" placeholder="Phone No." name="tel" />
+          </div>
+          <textarea class="contact__input contact__textarea" name="message" placeholder="Your Message" rows="1"
+            required></textarea>
+          <input type="submit" class="contact__button" value="Send Message" />
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">© 2026 by Ali Yasser</footer>
+  </div>
+  <script src="./scripts/skills.js"></script>
+</body>
+
+</html>
